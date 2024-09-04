@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survery Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <!--Main-->
+  <body>
+    <h1 id="title">My Practise Survey Form</h1>
+    <p id="description">Please fill out the below form</p>
+    <!--Form-->
+    <form id="survey-form">
+    <!--Typed answers-->
+    <div class="form-group">
+      <label for="name" id="name-label">Name<input  id="name" placeholder="Enter your name" required></label>
+      <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required></label>
+      <!--Age-->
+      <label for="number" id="number-label">Age (optional)<input id="number" type="number" min=13 max=120 placeholder="Age"></label>
+    </div>
+      <!--Experience / drop down-->
+    <div class="form-group">
+      <label for="coding-experience" id="coding-experience-label">How long have you been coding?</label>
+      <select id="dropdown">
+        <option value = """>Select an option</option>
+        <option value="1">Less than 6 months</option>
+        <option value="2">Six months - One year</option>
+        <option value="3">One year - Two years</option>
+        <option value="4">Over two years</option>
+      </select>
+      <!--Coding aims / radio-->
+      <fieldset>
+        <label>What are you aiming to do with your coding skills?</label>
+        <label><input type="radio" name="coding-aims" value="1" class="inline" checked> Keep coding as a hobby</label>
+        <label><input type="radio" name="coding-aims" value="2" class="inline"> Move into further education</label>
+        <label><input type="radio" name="coding-aims" value="3" class="inline"> Get a job in industry</label>
+        </fieldset>
+      </div>
+      <!--Checkboxes-->
+    <div class="form-group">
+      <p>What coding challenges interest you? (Select all that apply)</p>
+      <label><input name="coding-challenges" value="game-development" type="checkbox" class="inline"> Game development</label>
+      <label><input name="coding-challenges" value="cybersecurity" type="checkbox" class="inline"> Cybersecurity</label>
+      <label><input name="coding-challenges" value="web-development" type="checkbox" class="inline"> Web development</label>
+      <!--Textarea / further comments-->
+      <p>Do you have additional feedback?</p>
+      <textarea id="comments" name="comment" rows=3 cols=30 placeholder="Enter your comment here..."></textarea>
+      </div>
+      <!--Submit button-->
+      <input id="submit" type="submit" value="Submit">
+
+    </form>
+  </body>
+</html>

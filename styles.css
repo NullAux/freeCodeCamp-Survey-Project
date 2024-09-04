@@ -1,0 +1,61 @@
+body {
+    background: #83fc9e;
+  }
+  
+  h1, p {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+  
+  .form-group p, label {
+    text-align: left;
+    margin: 0.5rem 0;
+    display: block;
+  }
+  
+  form {
+    width: 80vw;
+    max-width: 600px;
+    min-width:200px;
+    margin: 0 auto;
+    background: #ed5a70;
+    padding: 2em 1em;
+    border-radius: 50px;
+  }
+  
+  .form-group {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid #372240;
+  }
+  
+  input, textarea, select {
+    display: block;
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2.5em;
+    background-color: #b5c4b8;
+    border: 1px solid #372240;
+  }
+  
+  .inline {
+    display: inline;
+    width: unset;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+    transform: scale(2)
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0.5rem 0;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin: 1rem auto;
+    font-size: 1.2rem;
+  }
